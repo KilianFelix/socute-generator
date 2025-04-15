@@ -1,0 +1,100 @@
+:root {
+  --bg: #120000;
+  --fg: #411717;
+  --txt: #ffbebe;
+  --link: #b25e5e;
+  --preview-bg: #633232;
+}
+
+@font-face { 
+    font-family: "Baristo"; 
+    src: url("/fonts/Baristo.ttf"); 
+}
+
+@font-face { 
+    font-family: "ShantellSansBold"; 
+    src: url("/fonts/ShantellSansBold.ttf"); 
+}
+
+@font-face { 
+    font-family: "ShantellSansRegular"; 
+    src: url("/fonts/ShantellSansRegular.ttf"); 
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.main {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    color: var(--txt);
+    font-family: Baristo;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-align: center;
+    display: inline;
+}
+
+.header img {
+    width: 35px;
+}
+
+.heart-left {
+    rotate: 340deg;
+    margin-right: 30px;
+}
+
+.heart-right {
+    rotate: 20deg;
+    margin-left: 30px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas:
+    "left right";
+    grid-template-columns: 3fr 5fr;
+    gap: 40px;
+    background-color: var(--fg);
+    width: 900px;
+    font-family: ShantellSansRegular;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.content h2 {
+    text-align: center;
+    color: var(--txt);
+    font-size: 30px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.preview {
+    border-radius: 15px;
+    background-color: var(--preview-bg);
+    border: solid 4px var(--txt);
+    height: 250px;
+}
+
+.upload {
+    border-radius: 15px;
+    background-color: var(--preview-bg);
+    border: solid 4px var(--txt);
+    height: 250px;
+}
