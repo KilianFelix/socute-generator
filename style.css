@@ -74,7 +74,7 @@ body {
 .content h2 {
     text-align: center;
     color: var(--txt);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .left {
@@ -97,4 +97,8 @@ body {
     background-color: var(--preview-bg);
     border: solid 4px var(--txt);
     height: 250px;
+}
+
+.preview img {
+    width: 200px;
 }
