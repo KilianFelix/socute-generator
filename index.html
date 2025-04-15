@@ -13,16 +13,26 @@
             <div class="left">
                 <h2>preview</h2>
                 <div class="preview">
-                    <img src="img/falcoCute.gif">
+                    <img src="img/falcoCute.gif" id="preview-img">
+                </div>
+                <div class="control">
+                    <button id="back"><img src="img/back.svg"></button>
+                    <button id="play"><img src="img/pause.svg"></button>
+                    <button id="forward"><img src="img/back.svg"></button>
                 </div>
             </div>
             <div class="right">
                 <h2>upload</h2>
                 <div class="upload">
-
+                    <img src="img/falco.png" id="upload-img">
+                    <div class="choose"><button id="chooseFile" onclick="chooseFile ()">choose file<input type="file" id="fileInput" lable="choose file"><div id="fileInfo"></div></div>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <span>highly inspired by: <a href="https://benisland.neocities.org/petpet/" target="_blank" title="Please don't sue me 👉👈">petpet generator</a></span>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
