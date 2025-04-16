@@ -32,3 +32,15 @@ function myCanvas() {
 }
 
 myCanvas()
+
+const themeButton = document.getElementById('color-theme');
+const htmlElement = document.documentElement;
+
+themeButton.addEventListener('click', () => {
+  const currentTheme = htmlElement.getAttribute('data-theme');
+  let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+  htmlElement.setAttribute('data-theme', newTheme);
+
+  themeButton.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
+});

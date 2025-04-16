@@ -1,10 +1,19 @@
 :root {
-  --bg: #120000;
-  --fg: #411717;
-  --txt: #ffbebe;
-  --link: #b25e5e;
-  --preview-bg: #633232;
-  --hover: #fbc8c8;
+  --bg: #eecece;
+  --fg: #ffffff;
+  --txt: #ba7373;
+  --link: #914646;
+  --preview-bg:#d8a3a3;
+  --hover: #d18b8b;
+}
+
+[data-theme=dark] {
+    --bg: #120000;
+    --fg: #411717;
+    --txt: #ffbebe;
+    --link: #b25e5e;
+    --preview-bg: #633232;
+    --hover: #fbc8c8;
 }
 
 @font-face { 
@@ -50,8 +59,10 @@ button:hover {
     display: inline;
 }
 
-.header img {
-    width: 25px;
+.header svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--txt);
 }
 
 .heart-left {
@@ -62,6 +73,14 @@ button:hover {
 .heart-right {
     rotate: 20deg;
     margin-left: 30px;
+}
+
+#color-theme {
+    border-radius: 15px;
+    font-family: ShantellSans;
+    border: transparent;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 .content {
@@ -113,7 +132,6 @@ button:hover {
 .preview canvas {
     width: 90%;
     padding: 5%;
-    border: solid 2px white;
 }
 
 .control {
@@ -132,15 +150,16 @@ button:hover {
     border-radius: 20px 0px 0px 20px;
 }
 
-#back img {
+.button-icon {
+    fill: var(--link);
     height: 20px;
 }
 
-#play img {
+#play svg {
     height: 20px;
 }
 
-#forward img {
+#forward svg {
     height: 20px;
     transform: scaleX(-1);
 }
