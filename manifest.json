@@ -1,7 +1,7 @@
 {
   "name": "SoCute Generator",
   "short_name": "SoCute",
-  "description": "",
+  "description": "Cute little SoCute Gif Generator",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#411717",
